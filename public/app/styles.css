@@ -9,9 +9,7 @@ body {
 }
 .navbar a{
   color: #71637D;
-}
-.navbar-header>a:hover{
-  color: #3B3B3B;
+  cursor: pointer;
 }
 .navbar {
   border-radius: 10px;
@@ -23,10 +21,6 @@ body {
   left: 0;
   text-align: left;
   margin: auto;
-}
-.nav>li>a:focus, .nav>li>a:active:focus{
-  color: #fff;
-  background-color: #D3BECF;
 }
 #chairs-select {
   height: 100px;
@@ -83,7 +77,6 @@ body {
   overflow: hidden;
   break-inside: avoid;
   border-radius: 10px;
-  border: $border-color solid 2px;
   background-image: url("http://image005.flaticon.com/150/png/512/130/130985.png");
   background-size: 50px;
   background-position: center;

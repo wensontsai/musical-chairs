@@ -7,6 +7,5 @@ var path = require('path');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-// server + listening port
 server.listen(port);
 console.log('Express server listening on port ' + port);
