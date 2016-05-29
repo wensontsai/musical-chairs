@@ -12,4 +12,4 @@ npm i
 npm start
 ```
 
-Serves on localhost:5000# musical-chairs
+Serves on localhost:5000

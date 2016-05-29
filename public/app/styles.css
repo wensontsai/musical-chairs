@@ -1,0 +1,106 @@
+body {
+  background-color: #FCFCFC;
+  font-family: Lato;
+  font-weight: 400;
+}
+.header {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+.navbar a{
+  color: #71637D;
+}
+.navbar-header>a:hover{
+  color: #3B3B3B;
+}
+.navbar {
+  border-radius: 10px;
+  background-color: #F7F7F7;
+}
+.navbar-brand{
+  position: absolute;
+  width: 100%;
+  left: 0;
+  text-align: left;
+  margin: auto;
+}
+.nav>li>a:focus, .nav>li>a:active:focus{
+  color: #fff;
+  background-color: #D3BECF;
+}
+#chairs-select {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+}
+#chairs-select .content {
+  text-align: center;
+  align-self: center;
+}
+#chairs-select input {
+  margin: 1rem;
+  width: 100px;
+}
+#chairs-select .content.winner {
+  background-color: #33FF33;
+  width: 100%;
+  margin: 1px;
+  border-radius: 10px;
+}
+#chairs-game {
+  margin-top: 25px;
+  flex-direction: row;
+  display: flex;
+}
+#chairs-game .header {
+  margin: 3rem;
+}
+#chairs-game .game-view {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+  text-align: center;
+}
+#chairs-game .content {  
+  column-count: 5;
+  column-gap: 0;
+  text-align: center;
+  justify-content: center;
+}
+#chairs-game .content .chair-single-frame,
+#chairs-select .content .chair-single-frame {
+  color: red;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  overflow: hidden;
+  break-inside: avoid;
+  border-radius: 10px;
+  border: $border-color solid 2px;
+  background-image: url("http://image005.flaticon.com/150/png/512/130/130985.png");
+  background-size: 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 15px;
+}
+#chairs-game .content .chair-single-frame .chair-single {
+  display: block;
+  border-radius: 10px;
+  justify-content: center;
+}
+#chairs-all .content .chair-single-frame.grayed-out {
+  background-color: gray;
+}
+#chairs-all {
+  margin-right: 10px;
+}
+#chairs-removed {
+  margin-left: 10px;
+}

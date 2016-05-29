@@ -1,0 +1,61 @@
+<div id="chairs-select">
+  <div ng-show="!winner" class="content">
+    <div class="select-view"> 
+      <div class="header">
+        How many chairs?
+      </div>
+      <input type="text" ng-model="numChairs">
+      <button class="btn btn-sm" ng-click="startChairs()">Play</button>
+    </div>
+  </div>
+  <div ng-show="winner" class="content winner">
+    <div class="winner-view">
+      <div class="header">
+        The winner is:
+      </div>
+      <div ng-repeat="chair in removeOrder">
+        <div class="chair-single-frame">
+          <div class="chair-single"> 
+            <span ng-bind="chair + 1"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="chairs-game">
+  <div id="chairs-all" class="game-view">
+    <div class="header">
+      Chairs All
+    </div>
+    <div class="content">
+      <div ng-repeat="chair in chairsAll">
+        <div ng-show="chair.show" class="chair-single-frame">
+          <div class="chair-single"> 
+            <span ng-bind="chair.num + 1"></span>
+          </div>
+        </div>
+        <div ng-show="!chair.show" class="chair-single-frame grayed-out">
+          <div class="chair-single"> 
+            X
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="chairs-removed" class="game-view">
+    <div class="header">
+      Chairs Removed
+    </div>
+    <div class="content">
+      <div ng-repeat="chair in chairsRemoved">
+        <div class="chair-single-frame">
+          <div class="chair-single"> 
+            <span ng-bind="chair + 1"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

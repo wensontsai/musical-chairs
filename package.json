@@ -1,0 +1,9 @@
+{
+  "name": "Musical-Chairs",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "~4.2.0"
+  }
+}
